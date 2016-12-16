@@ -75,15 +75,13 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    L 5.3 - V 2.1 Social Network
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://github.com/kati-frantz/Laravel-5.3-and-Vue-js-2.0-social-network" target="_blank">Source code</a>
+                    <a href="https://www.youtube.com/watch?v=zXtgFR0OdxU" target="_blank">Youtube</a>
+                    <a href="https://katifrantz.me/" target="_blank">Me</a>
                 </div>
             </div>
         </div>
