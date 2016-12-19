@@ -4,10 +4,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/check_relationship_status/{id}', function ($id) {
-    return \App\User::find($id);
-});
-
 
 Auth::routes();
 
@@ -28,4 +24,10 @@ Route::group(['middleware' => 'auth'], function(){
         'uses' => 'ProfilesController@update',
         'as' => 'profile.update'
     ]);
+
+    Route::get('/check_relationship_status/{id}', [
+        'uses' => 'FriendshipsController@check',
+        'as' => 'check'
+    ]);
+
 });
