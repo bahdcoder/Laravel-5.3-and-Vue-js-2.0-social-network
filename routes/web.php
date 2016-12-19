@@ -4,6 +4,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/check_relationship_status/{id}', function ($id) {
+    return \App\User::find($id);
+});
+
 
 Auth::routes();
 

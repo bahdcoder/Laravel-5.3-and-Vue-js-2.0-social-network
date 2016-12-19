@@ -25,6 +25,12 @@
                               </p>
                         </div>
                   </div>
+                  
+                  <div class="panel panel-default">
+                        <div class="panel-body">
+                              <friend :profile_user_id="{{ $user->id }}"></friend>
+                        </div>
+                  </div>
 
                   <div class="panel panel-default">
                         <div class="panel-heading">
