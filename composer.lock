@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ed9df8b872992035f068a7fe461a635a",
-    "content-hash": "76036da3b5b55b91dbe1e1affa01bf9e",
+    "hash": "fd23d42054ece04070ddeba66ef5c1fc",
+    "content-hash": "ad6308ce34e55d950f731c4936490afa",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -160,6 +160,51 @@
                 "string"
             ],
             "time": "2015-11-06 14:35:42"
+        },
+        {
+            "name": "frantz/generator",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kati-frantz/generator.git",
+                "reference": "c630d5cc47ec94bd7892b55bcf33736469ce964b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kati-frantz/generator/zipball/c630d5cc47ec94bd7892b55bcf33736469ce964b",
+                "reference": "c630d5cc47ec94bd7892b55bcf33736469ce964b",
+                "shasum": ""
+            },
+            "require-dev": {
+                "laracasts/generators": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Frantz\\Generator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frantz vallie",
+                    "email": "maitrefrantzv@gmail.com",
+                    "homepage": "https://github.com/kati-frantz/generator",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Very package for scaffolding vue components faster",
+            "homepage": "https://github.com/kati-rantz/generator",
+            "keywords": [
+                "Frantz",
+                "generator",
+                "laravel",
+                "vuejs"
+            ],
+            "time": "2016-11-15 20:05:27"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -903,6 +948,50 @@
                 "shell"
             ],
             "time": "2016-03-09 05:03:14"
+        },
+        {
+            "name": "pusher/pusher-php-server",
+            "version": "2.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pusher/pusher-http-php.git",
+                "reference": "598d08dfeda85352b0ec684be4b87888ba3727f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pusher/pusher-http-php/zipball/598d08dfeda85352b0ec684be4b87888ba3727f5",
+                "reference": "598d08dfeda85352b0ec684be4b87888ba3727f5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Library for interacting with the Pusher REST API",
+            "homepage": "https://github.com/pusher/pusher-php-server",
+            "keywords": [
+                "events",
+                "php-pusher-server",
+                "publish",
+                "pusher",
+                "realtime",
+                "rest",
+                "trigger"
+            ],
+            "time": "2016-12-04 18:53:56"
         },
         {
             "name": "ramsey/uuid",
