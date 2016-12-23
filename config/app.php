@@ -167,7 +167,7 @@ return [
          * Package Service Providers...
          */
 
-        Frantz\Generator\GeneratorServiceProvider::class,
+        //
 
         /*
          * Application Service Providers...

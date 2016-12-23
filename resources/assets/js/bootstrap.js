@@ -43,3 +43,8 @@ Vue.http.interceptors.push((request, next) => {
      broadcaster: 'pusher',
      key: 'a1c1c701c5ea3bb53e8e'
  });
+
+Pusher.log = function(message)
+{
+    window.console.log(message)
+}

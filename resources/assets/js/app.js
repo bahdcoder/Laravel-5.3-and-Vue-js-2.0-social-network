@@ -15,6 +15,8 @@ require('./bootstrap');
 
 Vue.component('friend', require('./components/Friend.vue'));
 
+Vue.component('notification', require('./components/Notification.vue'));
+
 const app = new Vue({
     el: '#app'
 });
