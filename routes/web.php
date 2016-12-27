@@ -44,4 +44,9 @@ Route::group(['middleware' => 'auth'], function(){
         return Auth::user()->unreadNotifications;
     });
 
+    Route::get('/notifications', [
+        'uses' => 'HomeController@notifications',
+        'as' => 'notifications'
+    ]);
+
 });
