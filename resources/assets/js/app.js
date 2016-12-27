@@ -9,6 +9,7 @@ require('./bootstrap');
 
 
 Vue.component('friend', require('./components/Friend.vue'));
+Vue.component('unread', require('./components/UnreadNots.vue'));
 Vue.component('notification', require('./components/Notification.vue'));
 
 import { store } from './store'

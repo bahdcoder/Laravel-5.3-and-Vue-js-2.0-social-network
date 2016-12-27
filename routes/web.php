@@ -40,4 +40,8 @@ Route::group(['middleware' => 'auth'], function(){
         'as' => 'accept_friend'
     ]);
 
+    Route::get('get_unread', function(){
+        return Auth::user()->unreadNotifications;
+    });
+
 });
