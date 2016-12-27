@@ -7,7 +7,7 @@
 
 require('./bootstrap');
 
-
+Vue.component('post', require('./components/Post.vue'));
 Vue.component('friend', require('./components/Friend.vue'));
 Vue.component('unread', require('./components/UnreadNots.vue'));
 Vue.component('notification', require('./components/Notification.vue'));
