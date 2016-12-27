@@ -2,7 +2,7 @@
       <li>
             <a href="/notifications">
                   Unread notifications
-                  <span class="badge">7</span>
+                  <span class="badge">{{ all_nots_count }}</span>
             </a>
       </li>
 </template>
@@ -16,8 +16,15 @@
                   get_unread() {
                         this.$http.get('/get_unread')
                             .then( (nots) => {
-                              console.log(nots)
+                                  nots.body.forEach( (not) => {
+                                        this.$store.commit('add_not', not)
+                                  })
                             })
+                  }
+            },
+            computed: {
+                  all_nots_count() {
+                        return this.$store.getters.all_nots_count
                   }
             }
       }
