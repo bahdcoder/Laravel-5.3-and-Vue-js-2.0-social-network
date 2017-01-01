@@ -48,6 +48,12 @@ Route::group(['middleware' => 'auth'], function(){
         'uses' => 'HomeController@notifications',
         'as' => 'notifications'
     ]);
+
+    Route::get('/feed', [
+        'uses' => 'FeedsController@feed',
+        'as' => 'feed'
+    ]);
+
     Route::post('/create/post', [
         'uses' => 'PostsController@store'
     ]);
