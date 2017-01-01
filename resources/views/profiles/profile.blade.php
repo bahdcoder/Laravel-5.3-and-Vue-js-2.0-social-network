@@ -9,6 +9,7 @@
                                     {{ $user->name }}'s Profile.
                               </p>
                         </div>
+                        
                         <div class="panel-body">
                               <center>
                                     <img src="{{ $user->avatar }}" width="140px" height="140px" style="border-radius: 50%;" alt="">

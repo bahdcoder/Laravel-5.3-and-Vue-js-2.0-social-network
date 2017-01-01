@@ -21,6 +21,6 @@ class FeedsController extends Controller
                 endforeach;
         endforeach;
 
-        return $feed;
+        return array_reverse($feed);
     }
 }
