@@ -2,14 +2,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <div class="panel panel-default">
-                        <div class="panel-heading text-center">
-                            Kati frantz
+                    <div class="panel panel-default" v-for="post in posts">
+                        <div class="panel-heading">
+                            <img :src="post.user.avatar" alt="" width="40px" height="40px" class="avatar-feed">
+                            {{ post.user.name }}
+                            <span class="pull-right">
+                                {{ post.created_at }}
+                            </span>
                         </div>
 
                         <div class="panel-body">
                             <p class="text-center">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut molestiae delectus minima tenetur eos nihil facere, officia ex optio assumenda repellendus aperiam consequuntur, voluptas nisi fuga sequi, distinctio animi neque!
+                                {{ post.content }}
                             </p>
                         </div>
                     </div>
@@ -33,9 +37,20 @@
                         })
                     })
             }
+        },
+
+        computed: {
+            posts() {
+                return this.$store.getters.all_posts
+            }
         }
     }
 </script>
 
 
 
+<style>
+    .avatar-feed{
+        border-radius: 50%;
+    }
+</style>

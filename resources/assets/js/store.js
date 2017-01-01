@@ -14,6 +14,9 @@ export const store = new Vuex.Store({
             },
             all_nots_count(state) {
                   return state.nots.length
+            },
+            all_posts(state) {
+                  return state.posts
             }
       },
       mutations: {
