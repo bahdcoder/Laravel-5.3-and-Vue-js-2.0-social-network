@@ -82,7 +82,9 @@
         </nav>
 
         @yield('content')
-        <notification :id="{{ Auth::id() }}"></notification>
+        @if(Auth::check())
+            <notification :id="{{ Auth::id() }}"></notification>
+        @endif
         <audio id="noty_audio">
             <source src="{{ asset('audio/notify.mp3') }}">
             <source src="{{ asset('audio/notify.ogg') }}">
