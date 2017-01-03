@@ -44,4 +44,6 @@ class User extends Authenticatable
     {
         return asset(Storage::url($avatar));
     }
+
+    
 }
