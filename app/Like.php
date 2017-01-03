@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Like extends Model
 {
+    public $with = ['user'];
+
     public function post()
     {
         return $this->belongsTo('App\Post');
