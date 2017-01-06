@@ -6,7 +6,8 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({
       state: {
             nots: [],
-            posts: []
+            posts: [],
+            auth_user: {}
       },
       getters: {
             all_nots(state) {
@@ -25,6 +26,9 @@ export const store = new Vuex.Store({
             },
             add_post(state, post) {
                   state.posts.push(post)
+            },
+            auth_user_data(state, user) {
+                  state.auth_user = user
             }
       }
 })

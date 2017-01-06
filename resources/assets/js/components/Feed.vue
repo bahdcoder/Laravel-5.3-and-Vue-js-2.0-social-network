@@ -15,15 +15,8 @@
                             <p class="text-center">
                                 {{ post.content }}
                             </p>
-                            <button class="btn btn-xs btn-info">
-                                Like post.
-                            </button>
-                            <hr>
-                            <img :src="post.user.avatar" alt="" width="20px" height="20px">
-                            <img :src="post.user.avatar" alt="" width="20px" height="20px">
-                            <img :src="post.user.avatar" alt="" width="20px" height="20px">
-                            <img :src="post.user.avatar" alt="" width="20px" height="20px">
-                            <img :src="post.user.avatar" alt="" width="20px" height="20px">
+                            
+                            <like :id="post.id"></like>
                         </div>
                     </div>
                 </div>
@@ -32,11 +25,16 @@
 </template>
 
 <script>
+
+    import Like from './Like.vue'
+
     export default {
         mounted() {
             this.get_feed()
         },
-
+        components: {
+            Like
+        },
         methods: {
             get_feed() {
                 this.$http.get('/feed')
