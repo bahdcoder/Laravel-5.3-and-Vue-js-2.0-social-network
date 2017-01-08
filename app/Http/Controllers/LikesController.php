@@ -13,10 +13,12 @@ class LikesController extends Controller
     {
         $post = Post::find($id);
 
-        return Like::create([
+        $like =  Like::create([
             'user_id' => Auth::id(),
             'post_id' => $post->id
         ]);
+
+        return Like::find($like->id);
     }
 
     public function unlike($id)
