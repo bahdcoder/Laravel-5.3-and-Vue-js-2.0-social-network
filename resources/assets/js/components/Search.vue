@@ -6,8 +6,10 @@
                         <br>
                         <div class="row" v-if="results.length">
                               <div class="text-center" v-for="user in results">
-                                    <img :src="user.avatar" alt="">
-                                    <h4 class="text-center">{{ user.name }}</h4>
+                                    <img :src="user.avatar" alt="" width="50px" height="50px" class="searched-user">
+                                    <a :href="profile_url(user.slug)">
+                                          <h4 class="text-center">{{ user.name }}</h4>
+                                    </a>
                               </div>
                         </div>
                   </div>
@@ -38,6 +40,21 @@
                               this.results = content.hits
                         })
                   }
-            }
+            },
+             computed: {
+                   profile_url(slug) {
+
+                         const url = "http://l53-v2-social.dev/profile/"
+
+                         return url + slug
+                         
+                   }
+             }
       }
 </script>
+
+<style>
+      .searched-user{
+            border-radius: 50%;
+      }
+</style>

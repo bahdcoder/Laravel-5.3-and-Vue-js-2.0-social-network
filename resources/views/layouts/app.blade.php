@@ -82,7 +82,9 @@
                 </div>
             </div>
         </nav>
-        <search></search>
+        @if(Auth::check())
+            <search></search>
+        @endif
         @yield('content')
         @if(Auth::check())
             <notification :id="{{ Auth::id() }}"></notification>

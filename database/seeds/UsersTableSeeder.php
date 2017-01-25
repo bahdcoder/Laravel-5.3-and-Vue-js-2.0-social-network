@@ -11,7 +11,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\User::class, 1)->create()->each(
+        factory(App\User::class, 40)->create()->each(
             function($user) {
                 $user->profile()->save(
                     factory(App\Profile::class, 1)->make()
